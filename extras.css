@@ -4,11 +4,12 @@
   --black: #222;
 }
 
-.light {
+.light,
+.light .styles__nav-link {
 	color: var(--black);
 }
 
-.light .page-wrapper {
+.light :is(.page-wrapper, .styles__nav) {
 	color: var(--black);
 	background-color: var(--white);
 }
