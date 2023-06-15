@@ -1,5 +1,4 @@
 
-
 :root {
   --white: #fff;
   --black: #222;
@@ -10,6 +9,6 @@
 }
 
 .light .page-wrapper {
+	color: var(--black);
 	background-color: var(--white);
 }
-
