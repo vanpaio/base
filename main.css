@@ -2150,7 +2150,7 @@ textarea.w-input, textarea.w-select {
 
 body {
   color: #222;
-  font-family: General Sans, Arial, sans-serif;
+  font-family: Plusjakartasans, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2160,7 +2160,7 @@ h1 {
   margin-top: 0;
   margin-bottom: .2em;
   font-size: 5.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -2168,7 +2168,7 @@ h2 {
   margin-top: 0;
   margin-bottom: .3em;
   font-size: 3.8rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -2176,15 +2176,15 @@ h3 {
   margin-top: 0;
   margin-bottom: .5em;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 h4 {
   margin-top: 0;
   margin-bottom: .8em;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 p {
@@ -2234,7 +2234,7 @@ strong {
   margin-top: 0;
   margin-bottom: .2em;
   font-size: 5.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -2242,7 +2242,7 @@ strong {
   margin-top: 0;
   margin-bottom: .3em;
   font-size: 3.8rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -2250,15 +2250,15 @@ strong {
   margin-top: 0;
   margin-bottom: .5em;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 .h4 {
   margin-top: 0;
   margin-bottom: .8em;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .section {
@@ -2675,8 +2675,6 @@ strong {
 }
 
 .page-wrapper {
-  color: #fff;
-  background-color: #222;
   position: relative;
 }
 
@@ -2706,6 +2704,10 @@ strong {
   align-items: center;
   display: flex;
   position: relative;
+}
+
+.styles__card-preview.dark {
+  background-color: #222;
 }
 
 .styles__visual-div {
@@ -2771,14 +2773,18 @@ strong {
 
 .styles__nav {
   z-index: 2;
-  text-transform: uppercase;
-  background-color: #222;
+  background-color: #fff;
   padding-top: 16px;
   padding-bottom: 16px;
   line-height: 1.1;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+.styles__nav.demo {
+  width: 100%;
+  position: static;
 }
 
 .styles__nav-container {
@@ -2788,11 +2794,11 @@ strong {
 }
 
 .styles__nav-link {
-  color: #fff;
+  color: #222;
   letter-spacing: .03em;
   padding: .6em .8em;
-  font-size: .85em;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   text-decoration: none;
   display: inline-block;
 }
@@ -2802,7 +2808,8 @@ strong {
 }
 
 .styles__nav-link.cc-cta {
-  background-color: #d14424;
+  color: #fff;
+  background-color: #222;
   border-radius: 4px;
   margin-left: .4em;
 }
@@ -2815,7 +2822,7 @@ strong {
 .styles__nav-version {
   color: #fff;
   text-transform: none;
-  background-color: #d14424;
+  background-color: #222;
   border-radius: 4px;
   margin-left: .8em;
   padding: .35em .5em .4em;
@@ -3127,6 +3134,199 @@ strong {
   background-color: #737373;
 }
 
+.nav-link {
+  color: #222;
+  letter-spacing: -.01em;
+  border-radius: 20px;
+  padding: .25rem .375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.w--current {
+  outline-offset: 0px;
+  color: #fff;
+  background-color: #222;
+  outline: .125rem solid #222;
+}
+
+.nav-link.w--current:hover {
+  text-decoration: none;
+}
+
+.nav-link.cc-cta {
+  background-color: #d14424;
+  border-radius: 4px;
+  margin-left: .4em;
+}
+
+.nav-link.cc-cta:hover {
+  background-color: #373737;
+  text-decoration: none;
+}
+
+.nav-menu {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.nav {
+  z-index: 2;
+  min-height: 3.875rem;
+  background-color: #fff;
+  border-bottom: 2px solid #f5f5f5;
+  padding: .625rem 3.5rem;
+  line-height: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav.demo {
+  width: 100%;
+  position: static;
+}
+
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.rectangle-4 {
+  object-fit: cover;
+}
+
+.nav-dropdown {
+  min-height: 1.75rem;
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  outline-offset: 0px;
+  color: #222;
+  letter-spacing: -.01em;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  outline: 2px solid #f5f5f5;
+  align-items: center;
+  padding: .25rem .375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: .8;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav-dropdown:hover {
+  text-decoration: none;
+}
+
+.nav-dropdown.w--current {
+  outline-offset: 0px;
+  color: #fff;
+  background-color: #222;
+  outline: .125rem solid #222;
+}
+
+.nav-dropdown.w--current:hover {
+  text-decoration: none;
+}
+
+.nav-dropdown.cc-cta {
+  background-color: #d14424;
+  border-radius: 4px;
+  margin-left: .4em;
+}
+
+.nav-dropdown.cc-cta:hover {
+  background-color: #373737;
+  text-decoration: none;
+}
+
+.dropdown-icon {
+  width: .5rem;
+  height: .5rem;
+  align-items: center;
+  margin-top: .1875rem;
+  display: flex;
+}
+
+.dropdown-list {
+  border-radius: .5rem;
+}
+
+.dropdown-list.w--open {
+  min-width: 9rem;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: .25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  display: flex;
+}
+
+.dropdown-link {
+  align-self: stretch;
+  margin: 0;
+  font-weight: 600;
+}
+
+.u-s-m {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  display: flex;
+}
+
+.u-s-m.cc-align-center {
+  align-items: center;
+}
+
+.u-s-xs {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  display: flex;
+}
+
+.u-s-xs.cc-align-center {
+  align-items: center;
+}
+
+.u-s-s {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  display: flex;
+}
+
+.u-s-s.cc-align-center {
+  align-items: center;
+}
+
+.select-field {
+  width: auto;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4.8rem;
@@ -3428,6 +3628,49 @@ strong {
   .u-pt-0 {
     padding-top: 0;
   }
+
+  .nav-link {
+    text-align: left;
+    padding: .6em 0;
+    display: block;
+  }
+
+  .nav-link.cc-cta {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+
+  .nav-link.cc-cta:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+  }
+
+  .nav-menu {
+    background-color: #373737;
+    padding: 12px 5% 20px;
+  }
+
+  .nav-dropdown {
+    text-align: left;
+    padding: .6em 0;
+    display: block;
+  }
+
+  .nav-dropdown.cc-cta {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+
+  .nav-dropdown.cc-cta:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3562,6 +3805,11 @@ strong {
   .u-pt-0 {
     padding-top: 0;
   }
+
+  .nav-menu {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 }
 
 @font-face {
@@ -3575,6 +3823,27 @@ strong {
   font-family: 'General Sans';
   src: url('https://uploads-ssl.webflow.com/647a6b7828e918e69ca21d7a/647a6b7828e918e69ca21dd5_GeneralSans-Regular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plusjakartasans';
+  src: url('https://uploads-ssl.webflow.com/647a6b7828e918e69ca21d7a/649def856ffd09ae6ec28e4e_PlusJakartaSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plusjakartasans';
+  src: url('https://uploads-ssl.webflow.com/647a6b7828e918e69ca21d7a/649defa95781773fa31b678b_PlusJakartaSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plusjakartasans';
+  src: url('https://uploads-ssl.webflow.com/647a6b7828e918e69ca21d7a/649defb30aa2a4c8b8feae44_PlusJakartaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
