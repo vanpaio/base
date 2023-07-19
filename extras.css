@@ -1,15 +1,29 @@
 
 :root {
-  --white: #fff;
   --black: #222;
+  --dark-gray: #373737;
+  --mid-gray: #737373;
+  --gray: #a5a5a5;
+  --lit-gray: #f5f5f5;
+  --white: #fff;
 }
 
-.light,
-.light .styles__nav-link {
-	color: var(--black);
+.dark {
+	color: var(--white);
+	background-color: var(--black);
 }
 
-.light :is(.page-wrapper, .styles__nav) {
+.dark :is(.styles__nav-link) {
+	color: var(--white);
+}
+
+.dark .styles__nav,
+.dark :not(.styles__card .u-bg-white) .styles__nav /* DOCUMENTATION PREVIEW EXCEPTION */ {
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.dark .btn { /* DOCUMENTATION PREVIEW EXCEPTION */
 	color: var(--black);
 	background-color: var(--white);
 }
