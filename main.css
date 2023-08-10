@@ -3314,11 +3314,11 @@ strong {
   display: flex;
 }
 
-.dropdown-list {
+.dropdown-menu {
   border-radius: .5rem;
 }
 
-.dropdown-list.w--open {
+.dropdown-menu.w--open {
   min-width: 9rem;
   grid-column-gap: 2px;
   grid-row-gap: 2px;
