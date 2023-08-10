@@ -3405,6 +3405,10 @@ strong {
   display: flex;
 }
 
+.main {
+  padding: 1.5rem 3.5rem 2rem;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4.8rem;
